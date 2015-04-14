@@ -17,6 +17,7 @@
 		B0843CBC1ADC754900A4A6F9 /* SpriteKeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0843CB41ADC754900A4A6F9 /* SpriteKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B0843CC21ADC75A000A4A6F9 /* KeyboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0843CC11ADC75A000A4A6F9 /* KeyboardScene.swift */; };
 		B0843CC31ADC75A800A4A6F9 /* KeyboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0843CC11ADC75A000A4A6F9 /* KeyboardScene.swift */; };
+		B0843CC41ADC938E00A4A6F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0843C971ADC750600A4A6F9 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0843CC41ADC938E00A4A6F9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController, InputDelegate {
 
     @IBOutlet var nextKeyboardButton: UIButton!
 
@@ -24,6 +24,12 @@ class KeyboardViewController: UIInputViewController {
         
     }
     
+    /*
+    Make sure you choose the SpriteKeyboardExtension scheme to run, and link it with another app that has a textfield (ex Safari).
+    After running, Hit home (cmd-shift-h) and go to Settings -> General -> Keyboards -> Add New Keyboard and install your keyboard.
+    Now you can return to Safari, tap into a textfield and choose your keyboard from the keybaord switcher.
+    */
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -32,12 +38,12 @@ class KeyboardViewController: UIInputViewController {
         skView.setTranslatesAutoresizingMaskIntoConstraints(false)
         skView.showsPhysics = false
         skView.showsNodeCount = false
-        skView.showsFPS = false
+        skView.showsFPS = true
         
         let scene = KeyboardScene()
         scene.size = skView.bounds.size
         scene.scaleMode = .AspectFill
-        scene.weakParent = self
+        scene.inputDelegate = self
         skView.presentScene(scene)
     }
 
